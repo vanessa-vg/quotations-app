@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quotations-app</title>
+    <link rel="stylesheet" href="/style.css">
     <script defer type="module" src="/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Playwrite+IT+Moderna:wght@100..400&family=Sigmar&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
+<div class="main-container">
     <h1>Mes citations</h1>
     <h2>Gestionaire de citations en ligne</h2>
     <h3 id="count">0 citation</h3>
@@ -15,10 +19,10 @@
     <hr>
 
     <form id="form">
-        <label for="quote">Quote&nbsp;:</label>
-        <input type="text" id="user_quote" name="quote"/>
+        <label for="quote">Citation&nbsp;:</label>
+        <textarea id="user_quote" name="quote" rows="4" cols="50" placeholder="Ecrivez votre citation ici..."></textarea>
 
-        <label for="name">Nom&nbsp;:</label>
+        <label for="name">Auteur&nbsp;:</label>
         <input type="text" id="name" name="user_name"/>
 
         <button type="submit" id="submit-button">Envoyer</button>
@@ -26,5 +30,6 @@
     </form>
 
     <div id="quote-list"></div>
+</div>
 </body>
 </html>
